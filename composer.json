@@ -1,0 +1,20 @@
+{
+	"name": "weavephp/error-whoops",
+	"description": "Weave glue-framework Whoops Error adaptor",
+	"type": "package",
+	"version": "0.0.1",
+	"authors": [
+		{
+			"name": "Robert Goldsmith",
+			"email": "r.s.goldsmith@far-blue.co.uk"
+		}
+	],
+	"require": {
+		"filp/whoops": "2.*"
+	},
+	"autoload": {
+		"psr-4": {
+			"Weave\\Error\\Whoops\\": "src/"
+		}
+	}
+}
