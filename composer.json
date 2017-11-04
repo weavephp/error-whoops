@@ -1,8 +1,9 @@
 {
 	"name": "weavephp/error-whoops",
 	"description": "Weave glue-framework Whoops Error adaptor",
-	"type": "package",
-	"version": "0.0.1",
+	"type": "weave-adaptor",
+	"keywords" : ["weave", "error", "adaptor"],
+	"license": "MIT",
 	"authors": [
 		{
 			"name": "Robert Goldsmith",
