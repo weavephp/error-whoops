@@ -1,5 +1,4 @@
 <?php
-declare(strict_types = 1);
 /**
  * Weave Whoops Error Adaptor.
  */
@@ -20,8 +19,19 @@ trait Whoops
 	 */
 	protected function loadErrorHandler(array $config = [], $environment = null)
 	{
+		$this->loadWhoopsErrorHandler();
+	}
+
+	/**
+	 * Setup the instance of Whoops.
+	 *
+	 * @return \Whoops\Run;
+	 */
+	protected function loadWhoopsErrorHandler()
+	{
 		$run = new \Whoops\Run;
 		$run->pushHandler(new \Whoops\Handler\PrettyPageHandler);
 		$run->register();
+		return $run;
 	}
 }
